@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comtact me</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+
+<style>
+    .container{
+        padding: 0 20rem 0 20rem;
+    }
+
+</style>
+<body>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "fPpCuMisgPH_Q5ucq",
+  });
+})();
+</script>
+    
+    <div class="container">
+
+        <h1 class="titlen">
+           Get in Touch
+        </h1>
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">E-mail</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your E-mail..">
+      
+         
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <div class="btn-box">
+            <a href="" class="btn btnh">Submit</a>
+        </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+        function sendMail(){
+        let parms={
+        name :document.getElementById("fname").value,
+        email :document.getElementById("lname").value,
+        subject:document.getElementById("subject").value
+       
+    }
+    emailjs.send("service_m2ri3zj","template_ky9g7li",parms).then(alert("email send!!"))
+
+    
+}
+    </script>
+
+</body>
+</html>
