@@ -550,3 +550,144 @@ input[type=text], select, textarea {
     /* align-items: center; */
     padding-bottom: 3REM;
   }
+/* Base Styles (no change to your existing styles) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .book {
+        width: 500px;
+        height: 600px;
+    }
+    .profile-page img {
+        max-width: 150px;
+    }
+    .profile-page h1 {
+        font-size: 2rem;
+    }
+    .profile-page h3 {
+        font-size: 1.2rem;
+    }
+    .btn {
+        width: 8rem;
+        height: 2.5rem;
+        font-size: 0.9rem;
+    }
+    .skills-content .content span {
+        width: 7rem;
+        height: 5rem;
+    }
+    .services-box .services-content {
+        flex: 1 1 8rem;
+    }
+    input[type=text], select, textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    .book {
+        width: 400px;
+        height: 500px;
+    }
+    .profile-page img {
+        max-width: 120px;
+    }
+    .profile-page h1 {
+        font-size: 1.8rem;
+    }
+    .profile-page h3 {
+        font-size: 1rem;
+    }
+    .btn {
+        width: 7rem;
+        height: 2.2rem;
+        font-size: 0.8rem;
+    }
+    .skills-content .content span {
+        width: 6rem;
+        height: 4.5rem;
+    }
+    .services-box .services-content {
+        flex: 1 1 100%;
+    }
+    .container {
+        padding: 20px 5%;
+    }
+    main.row {
+        grid-template-columns: 1fr;
+        grid-column-gap: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .book {
+        width: 300px;
+        height: 400px;
+    }
+    .profile-page img {
+        max-width: 100px;
+    }
+    .profile-page h1 {
+        font-size: 1.5rem;
+    }
+    .profile-page h3 {
+        font-size: 0.9rem;
+    }
+    .btn {
+        width: 6rem;
+        height: 2rem;
+        font-size: 0.7rem;
+    }
+    .skills-content .content span {
+        width: 5rem;
+        height: 4rem;
+        font-size: 0.8rem;
+    }
+    input[type=text], select, textarea {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .book {
+        width: 100%;
+        height: auto;
+    }
+    .profile-page img {
+        max-width: 80px;
+    }
+    .profile-page h1 {
+        font-size: 1.2rem;
+    }
+    .profile-page h3 {
+        font-size: 0.8rem;
+    }
+    .btn {
+        width: 5rem;
+        height: 1.8rem;
+        font-size: 0.6rem;
+    }
+    .skills-content .content span {
+        width: 4rem;
+        height: 3.5rem;
+        font-size: 0.7rem;
+    }
+    input[type=text], select, textarea {
+        padding: 6px;
+        font-size: 10px;
+    }
+    .container {
+        padding: 10px 2%;
+    }
+}
+
